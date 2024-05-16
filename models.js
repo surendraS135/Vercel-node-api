@@ -3,6 +3,7 @@ const config = require("./config");
 
 const sequelize = new Sequelize(config.POSTGRES_URL, {
   dialect: config.dialect,
+  dialectModule: require('pg'),
   ssl: config.POSTGRES_URL.includes("sslmode=require"),
   pool: {
     max: config.pool.max,
