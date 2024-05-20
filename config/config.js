@@ -8,8 +8,8 @@ module.exports = {
     password: env.POSTGRES_PASSWORD, //"PEIXl7nrGfm4",
     database: env.POSTGRES_DATABASE, //"verceldb",
   },
-  POSTGRES_URL:
-    "postgres://default:PEIXl7nrGfm4@ep-small-river-a4pf78lk-pooler.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require",
+  POSTGRES_URL: env.POSTGRES_URL,
+    //"postgres://default:PEIXl7nrGfm4@ep-small-river-a4pf78lk-pooler.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require",
   listPerPage: 10,
   pool: {
     max: 5,
